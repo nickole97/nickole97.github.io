@@ -358,50 +358,85 @@
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+    
+    .research-project {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .research-project.reverse {
+        direction: ltr;
+    }
 }
 
-        .research-interests {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-        }
+/* Research Section */
+#research {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-        .research-interests h3 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.8rem;
-            color: var(--primary);
-            margin-bottom: 1.5rem;
-        }
+.research-project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 6rem;
+}
 
-        .research-interests ul {
-            list-style: none;
-        }
+.research-project:last-child {
+    margin-bottom: 0;
+}
 
-        .research-interests li {
-            padding: 0.7rem 0;
-            padding-left: 1.5rem;
-            position: relative;
-            color: var(--text-medium);
-        }
+.research-project.reverse {
+    direction: rtl;
+}
 
-        .research-interests li::before {
-            content: '→';
-            position: absolute;
-            left: 0;
-            color: var(--accent);
-            font-weight: 600;
-        }
+.research-project.reverse > * {
+    direction: ltr;
+}
 
-        .bio-text {
-            font-size: 1.05rem;
-            line-height: 1.9;
-            color: var(--text-medium);
-        }
+.research-image {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
 
-        .bio-text p {
-            margin-bottom: 1.5rem;
-        }
+.research-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.research-text h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--primary);
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+}
+
+.research-text p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-medium);
+    margin-bottom: 1rem;
+}
+
+.research-text .publication-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.research-text .publication-link:hover {
+    color: var(--primary);
+}
 
         /* Publications Section */
         .publication {
@@ -772,34 +807,35 @@
     </div>
 </section>
 
-    <section id="research">
-        <h2>Current Research</h2>
-        <p style="font-size: 1.1rem; color: var(--text-medium); margin-bottom: 2rem; line-height: 1.8;">
-            My dissertation research investigates how social organization affects the evolution of gut microbiomes in stingless bees (Meliponini). Using phylogenetic comparative methods and metagenomic analyses, I'm uncovering patterns of symbiont gain and loss across bee diversification and exploring how host group size mediates the maintenance of specialized gut bacteria.
-        </p>
-        
-        <div class="about-grid">
-            <div class="research-interests">
-                <h3>Current Projects</h3>
-                <ul>
-                    <li>Symbiont evolution in stingless bees</li>
-                    <li>Microbiome disruption in neotropical bumblebees</li>
-                    <li>Comparative genomics of bee-associated bacteria</li>
-                    <li>Fieldwork in Latin American bee populations</li>
-                </ul>
-            </div>
-            
-            <div class="research-interests">
-                <h3>Methods & Approaches</h3>
-                <ul>
-                    <li>16S rRNA amplicon sequencing</li>
-                    <li>Metagenomic & genomic analysis</li>
-                    <li>Phylogenetic comparative methods</li>
-                    <li>Field sampling & specimen collection</li>
-                </ul>
-            </div>
+   <section id="research">
+    <h2>Current Research</h2>
+    
+    <!-- Project 1: Stingless Bees - Imagen izquierda, texto derecha -->
+    <div class="research-project">
+        <div class="research-image">
+            <img src="images/stinglessbees.png" alt="Stingless bees colony size and symbionts">
         </div>
-    </section>
+        <div class="research-text">
+            <h3>Among social bees, does colony size determine which symbionts persist across evolutionary time?</h3>
+            <p>Working with stingless bees (Meliponini), I used phylogenetic comparative methods to test whether social structure—specifically colony size—predicts the long-term maintenance or loss of specialized gut bacteria.</p>
+            <p>I found that larger colonies are significantly more likely to retain core symbionts like Snodgrassella and Gilliamella, revealing how social organization can mediate symbiont stability over millions of years of host diversification.</p>
+            <a href="https://doi.org/10.64898/2026.01.16.699994" class="publication-link" target="_blank">📄 Read the preprint (2026) →</a>
+        </div>
+    </div>
+
+    <!-- Project 2: Bumblebees - Imagen derecha, texto izquierda -->
+    <div class="research-project reverse">
+        <div class="research-image">
+            <img src="images/bumblebees.png" alt="Bumblebees climate transitions">
+        </div>
+        <div class="research-text">
+            <h3>How do gut microbiomes evolve when hosts colonize new environments?</h3>
+            <p>Bumble bees (Bombus) independently dispersed from temperate zones into tropical mountains multiple times, losing winter diapause and encountering new thermal regimes and floral resources. In 2023, we published initial work showing that gut microbiome composition remained surprisingly conserved across these climatic transitions.</p>
+            <p>Now, using shotgun metagenomics on newly collected samples from Colombia and the USA, I'm investigating whether these transitions drove convergent changes at finer scales—specifically in microbial strain diversity and functional gene repertoires. This work tests whether microbiomes facilitate or constrain host adaptation to new climates.</p>
+            <a href="https://doi.org/10.1128/msphere.00139-23" class="publication-link" target="_blank">📄 Initial findings in mSphere (2023) →</a>
+        </div>
+    </div>
+</section>
 
     <section id="publications">
         <h2>Publications</h2>
