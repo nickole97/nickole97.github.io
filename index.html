@@ -320,13 +320,45 @@
             margin: 0 auto;
             padding: 0 2rem;
         }
-
+        
         .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            margin-top: 2rem;
-        }
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: var(--text-medium);
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+}
+
+.about-image {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+        
+/* Responsive */
+@media (max-width: 968px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
 
         .research-interests {
             background: white;
@@ -719,32 +751,24 @@
         </div>
     </section>
     
-    <section id="about">
-        <div class="about-content">
-            <h2>About Me</h2>
-            <div class="about-grid">
-                <div class="bio-text">
-                    <p>I'm a 4th-year PhD candidate at the University of California, Irvine, working in the Hammer Lab. My research focuses on understanding the evolutionary dynamics of gut microbiomes in neotropical bees, particularly how host social behavior and group size influence the maintenance and loss of specialized microbial symbionts.</p>
-                    
-                    <p>Originally from Bogotá, Colombia, I completed my undergraduate studies at Universidad de los Andes, where I developed my passion for microbial ecology and tropical biology. My work combines field biology, molecular techniques, and computational approaches to explore questions at the intersection of microbiology, evolution, and ecology.</p>
-                    
-                    <p>Beyond research, I'm passionate about science communication and creating spaces for knowledge sharing. I've organized workshops and discussion groups to make microbial ecology accessible to diverse audiences.</p>
-                </div>
+<section id="about">
+    <div class="about-content">
+        <h2>About Me</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>I'm a PhD candidate at the University of California, Irvine, working in the Hammer Lab. Originally from Bogotá, Colombia, I completed my undergraduate studies at Universidad de los Andes, where I developed my passion for microbial ecology and tropical biology.</p>
                 
-                <div class="research-interests">
-                    <h3>Research Interests</h3>
-                    <ul>
-                        <li>Microbial ecology & evolution</li>
-                        <li>Host-microbe symbiosis</li>
-                        <li>Evolutionary genomics</li>
-                        <li>Bee biology & tropical ecology</li>
-                        <li>Bioinformatics & computational biology</li>
-                        <li>Comparative phylogenetics</li>
-                    </ul>
-                </div>
+                <p>My research combines field biology, molecular techniques, and computational approaches to explore questions at the intersection of microbiology, evolution, and ecology. I'm particularly interested in how social structure and environmental gradients shape the evolutionary dynamics of host-microbe symbioses in neotropical bees.</p>
+                
+                <p>Beyond research, I'm passionate about science communication and creating spaces for knowledge sharing. I've organized workshops and discussion groups to make microbial ecology accessible to diverse audiences.</p>
+            </div>
+            
+            <div class="about-image">
+                <img src="images/about-me.jpeg" alt="Nickole Villabona">
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <section id="research">
         <h2>Current Research</h2>
