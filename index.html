@@ -564,17 +564,36 @@ nav a:hover {
         }
 
         /* Footer */
-        footer {
-            background: var(--primary);
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 5rem;
-        }
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 0;
+}
 
-        footer p {
-            opacity: 0.9;
-        }
+footer .footer-social {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+footer .footer-social a {
+    color: white;
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+}
+
+footer .footer-social a:hover {
+    color: var(--secondary);
+    transform: translateY(-3px);
+}
+
+footer p {
+    opacity: 0.9;
+    font-size: 0.9rem;
+}
 
         /* Gallery Section */
         .gallery-tabs {
@@ -1060,9 +1079,17 @@ nav a:hover {
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Nickole Andrea Villabona. All rights reserved.</p>
-    </footer>
+<footer>
+    <div class="footer-social">
+        <a href="mailto:nvillabo@uci.edu" title="Email">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://www.instagram.com/nickole97/?hl=en" target="_blank" title="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </div>
+    <p>© 2026 Nickole Andrea Villabona. All rights reserved.</p>
+</footer>
 
     <script>
         function showGallery(category) {
