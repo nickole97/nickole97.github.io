@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5EF99E1Q92"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5EF99E1Q92');
+</script>
+ 
+    <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
+    
+    <title>Nickole Andrea Villabona | Microbial Ecologist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2C5F2D;
+            --secondary: #F4A259;
+            --accent: #97BC62;
+            --text-dark: #1a1a1a;
+            --text-medium: #4a4a4a;
+            --text-light: #6a6a6a;
+            --background: #FEFEFE;
+            --background-alt: #F9F6F1;
+            --border: #E8DCC4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Work Sans', sans-serif;
+            color: var(--text-dark);
+            background: var(--background);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Header/Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(--primary);
+            z-index: 1000;
+            padding: 1.5rem 0;
+            animation: slideDown 0.6s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001;
+}
+
+.mobile-menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: white;
+            letter-spacing: 0.5px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+    nav a {
+    color: white;  /* Links blancos */
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 400;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--secondary);  /* Línea naranja */
+    transition: width 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--secondary);  /* Hover naranja */
+}
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--background-alt) 0%, var(--background) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(151, 188, 98, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(30px, -30px) rotate(5deg); }
+            66% { transform: translate(-20px, 20px) rotate(-5deg); }
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-text h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1.1;
+            margin-bottom: 1rem;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .hero-text .subtitle {
+            font-size: 1.3rem;
+            color: var(--secondary);
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            color: var(--text-medium);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            animation: fadeInUp 0.8s ease-out 0.6s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+.cv-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border: 2px solid var(--primary);
+    border-radius: 30px;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.cv-button:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            animation: fadeInUp 0.8s ease-out 0.8s both;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 0.8rem 1.5rem;
+            border: 1.5px solid var(--border);
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            background: white;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .social-links a i {
+            font-size: 2.3rem;
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .hero-image {
+            position: relative;
+            animation: fadeIn 1s ease-out 0.4s both;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .image-placeholder {
+            width: 100%;
+            aspect-ratio: 1;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.1rem;
+            text-align: center;
+            padding: 2rem;
+            box-shadow: 0 20px 60px rgba(44, 95, 45, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-placeholder::before {
+            content: '🐝';
+            position: absolute;
+            font-size: 8rem;
+            opacity: 0.1;
+            animation: rotate 30s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Section Styles */
+        section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 3rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--secondary);
+        }
+
+        /* About Section */
+        #about {
+            background: var(--background-alt);
+            margin: 0;
+            max-width: 100%;
+            padding: 5rem 0;
+        }
+
+        .about-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: var(--text-medium);
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+}
+
+.about-image {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+        
+/* Responsive */
+/* Responsive - MÓVIL */
+@media (max-width: 968px) {
+    /* Esconder logo en móvil */
+    .logo {
+        display: none;
+    }
+    
+    /* Mostrar botón hamburguesa */
+    .mobile-menu-toggle {
+        display: flex;
+    }
+    
+    /* Menú en móvil */
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 70%;
+        max-width: 300px;
+        background: var(--primary);
+        flex-direction: column;
+        padding: 5rem 2rem 2rem;
+        gap: 2rem;
+        transition: right 0.3s ease;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+    }
+    
+    nav ul.active {
+        right: 0;
+    }
+    
+    nav ul li a {
+        color: white;
+        font-size: 1.2rem;
+    }
+    
+    nav ul li a::after {
+        background: var(--secondary);
+    }
+    
+    /* Ajustes hero */
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    /* About */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* Research - ARREGLO PARA MÓVIL */
+    .research-project {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .research-project.reverse {
+        direction: ltr !important;
+    }
+    
+    .research-text h3 {
+        font-size: 1.5rem;
+    }
+    
+    .research-text p {
+        font-size: 1rem;
+    }
+    
+    .research-image {
+        max-width: 100%;
+    }
+
+    /* General */
+    section h2 {
+        font-size: 2.2rem;
+    }
+    
+    /* Gallery */
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+/* Research Section */
+#research {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.research-project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.research-project:last-child {
+    margin-bottom: 0;
+}
+
+.research-project.reverse {
+    direction: rtl;
+}
+
+.research-project.reverse > * {
+    direction: ltr;
+}
+
+.research-image {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.research-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.research-text h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--primary);
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+}
+
+.research-text p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-medium);
+    margin-bottom: 1rem;
+}
+
+.research-text .publication-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.research-text .publication-link:hover {
+    color: var(--primary);
+}
+
+        /* Publications Section */
+        .publication {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--accent);
+            box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .publication:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+        }
+
+        .publication h3 {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 0.7rem;
+            line-height: 1.5;
+        }
+
+        .publication .authors {
+            color: var(--text-medium);
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .publication .journal {
+            color: var(--text-light);
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+
+        .publication a {
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .publication a:hover {
+            color: var(--primary);
+        }
+
+        .preprint-badge {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        /* CV Section */
+        #cv {
+            background: var(--background-alt);
+            margin: 0;
+            max-width: 100%;
+            padding: 5rem 0;
+        }
+
+        .cv-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .cv-button {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.05rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(44, 95, 45, 0.2);
+        }
+
+        .cv-button:hover {
+            background: var(--accent);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(44, 95, 45, 0.3);
+        }
+
+        /* Contact Section */
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-card {
+            background: var(--background-alt);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .contact-card p, .contact-card a {
+            color: var(--text-medium);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-card a:hover {
+            color: var(--secondary);
+        }
+
+        /* Footer */
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 0;
+}
+
+footer .footer-social {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+footer .footer-social a {
+    color: white;
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+}
+
+footer .footer-social a:hover {
+    color: var(--secondary);
+    transform: translateY(-3px);
+}
+
+footer p {
+    opacity: 0.9;
+    font-size: 0.9rem;
+}
+
+        /* Gallery Section */
+        .gallery-tabs {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery-tab {
+            padding: 0.8rem 2rem;
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            color: var(--text-medium);
+        }
+
+        .gallery-tab:hover {
+            border-color: var(--accent);
+            color: var(--primary);
+        }
+
+        .gallery-tab.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            aspect-ratio: 4/3;
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--background-alt) 0%, var(--border) 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-medium);
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .gallery-placeholder i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        .gallery-placeholder p {
+            font-size: 0.9rem;
+        }
+
+        .gallery-item .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
+            color: white;
+            padding: 2rem 1.5rem 1rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .caption {
+            transform: translateY(0);
+        }
+
+        .gallery-category {
+            display: none;
+        }
+
+        .gallery-category.active {
+            display: grid;
+        }
+
+        @media (max-width: 640px) {
+            nav ul {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-text .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .social-links {
+                flex-wrap: wrap;
+            }
+
+            section {
+                padding: 3rem 1.5rem;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Nickole Villabona</div>
+            
+      <!-- AGREGAR: Botón hamburguesa -->
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Nickole Andrea Villabona</h1>
+                <div class="subtitle">PhD Candidate in Ecology & Evolutionary Biology | <a href="https://faculty.sites.uci.edu/hammerlab/" target="_blank" style="color: var(--secondary); text-decoration: none;">Hammer lab</a> | <a href="https://ecoevo.bio.uci.edu/" target="_blank" style="color: var(--secondary); text-decoration: none;">University of California, Irvine</a></div>
+                <p>I'm a microbial ecologist with broad interests in host-microbiome evolution across spatial and temporal scales. In my current doctoral research, I'm exploring how evolution shapes these relationships, especially across social bee diversification.</p>
+                
+                <a href="./Nickole_Villabona_CV_2026.docx.pdf" class="cv-button" target="_blank">View my CV →</a>
+
+                <div class="social-links">
+                    <a href="https://scholar.google.com/citations?user=odpyW8YAAAAJ&hl=es" target="_blank">
+                        <i class="fa-brands fa-google-scholar"></i>
+                    </a>
+                    <a href="https://orcid.org/0000-0001-5269-2270" target="_blank">
+                        <i class="fa-brands fa-orcid"></i>
+                    </a>
+                    <a href="https://www.researchgate.net/profile/Nickole-Villabona-2" target="_blank">
+                        <i class="fa-brands fa-researchgate"></i>
+                    </a>
+                    <a href="https://github.com/nickole97" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+           </div>
+            <div class="hero-image">
+                <img src="profile.jpeg" alt="Nickole Villabona" style="width: 100%; border-radius: 20px; box-shadow: 0 20px 60px rgba(44, 95, 45, 0.15);">
+            </div>
+        </div>
+    </section>
+    
+<section id="about">
+    <div class="about-content">
+        <h2>About Me</h2>
+        <div class="about-grid">
+            
+            <div class="about-image">
+                <img src="images/about-me.jpg" alt="Nickole Villabona">
+            </div>
+           
+            <div class="about-text">
+                <p>I'm a PhD candidate at the University of California, Irvine, working in the Hammer Lab. Originally from Bogotá, Colombia, I completed my undergraduate studies at Universidad de los Andes, where I developed my passion for microbial ecology and tropical biology.</p>
+                
+                <p>My research combines field biology, molecular techniques, and computational approaches to explore questions at the intersection of microbiology, evolution, and ecology. I'm particularly interested in how social structure and environmental gradients shape the evolutionary dynamics of host-microbe symbioses in neotropical bees.</p>
+                
+                <p>Beyond research, I'm passionate about science communication and creating spaces for knowledge sharing. I've organized workshops and discussion groups to make microbial ecology accessible to diverse audiences.</p>
+            </div> 
+            
+        </div>
+    </div>
+</section>
+
+   <section id="research">
+    <h2>Current Research</h2>
+    
+    <!-- Project 1: Stingless Bees - Imagen izquierda, texto derecha -->
+    <div class="research-project">
+        <div class="research-image">
+            <img src="images/stinglessbees.png" alt="Stingless bees colony size and symbionts">
+        </div>
+        <div class="research-text">
+            <h3>Among social bees, does colony size determine which symbionts persist across evolutionary time?</h3>
+            <p>Working with stingless bees (Meliponini), I used phylogenetic comparative methods to test whether social structure—specifically colony size—predicts the long-term maintenance or loss of specialized gut bacteria.</p>
+            <p>I found that larger colonies are significantly more likely to retain core symbionts like Snodgrassella and Gilliamella, revealing how social organization can mediate symbiont stability over millions of years of host diversification.</p>
+            <a href="https://doi.org/10.64898/2026.01.16.699994" class="publication-link" target="_blank">📄 Read the preprint (2026) →</a>
+        </div>
+    </div>
+
+    <!-- Project 2: Bumblebees - Imagen derecha, texto izquierda -->
+    <div class="research-project reverse">
+        <div class="research-image">
+            <img src="images/bumblebess.png" alt="Bumblebees climate transitions">
+        </div>
+        <div class="research-text">
+            <h3>How do gut microbiomes evolve when hosts colonize new environments?</h3>
+            <p>Bumblebees (<em>Bombus</em>) independently dispersed from temperate zones into tropical mountains multiple times, losing winter diapause and encountering new thermal regimes and floral resources. In 2023, we published initial work showing that gut microbiome composition remained surprisingly conserved across these climatic transitions.</p>
+            <p>Now, using shotgun metagenomics on newly collected samples from Colombia and the USA, I'm investigating whether these transitions drove convergent changes at finer scales—specifically in microbial strain diversity and functional gene repertoires. This work tests whether microbiomes facilitate or constrain host adaptation to new climates.</p>
+            <a href="https://doi.org/10.1128/msphere.00139-23" class="publication-link" target="_blank">📄 Initial findings in mSphere (2023) →</a>
+        </div>
+    </div>
+</section>
+    
+<section id="publications">
+    <h2>Publications</h2>
+    
+    <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--accent); margin-bottom: 2rem;">Preprints</h3>
+    
+    <div class="publication">
+        <div>
+            <span class="preprint-badge">PREPRINT</span>
+            <h3>Gain and loss of gut symbionts during stingless bee diversification is linked to host group size</h3>
+            <p class="authors"><strong>Villabona Buitrago, N. A.</strong>, Vazquez, A., Schlauch, J., Rasmussen, C., Joyce, R., & Hammer, T. J.</p>
+            <p class="journal">bioRxiv (2026). <a href="https://doi.org/10.64898/2026.01.16.699994" target="_blank">doi: 10.64898/2026.01.16.699994</a></p>
+        </div>
+        
+        <div style="display: flex; gap: 1rem; align-items: center;">
+            <div class="__dimensions_badge_embed__" 
+                 data-doi="10.64898/2026.01.16.699994" 
+                 data-style="small_circle">
+            </div>
+            
+            <div data-badge-type="donut" 
+                 data-doi="10.64898/2026.01.16.699994" 
+                 data-condensed="true" 
+                 class="altmetric-embed">
+            </div>
+        </div>
+    </div>
+    
+    <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--accent); margin: 3rem 0 2rem;">Peer-Reviewed</h3>
+    
+    <div class="publication">
+        <div>
+            <h3>Conserved, yet disruption-prone, gut microbiomes in neotropical bumblebees</h3>
+            <p class="authors"><strong>Villabona, N.</strong>, Moran, N., Hammer, T., & Reyes, A.</p>
+            <p class="journal">mSphere (2023), e0013923. <a href="https://doi.org/10.1128/msphere.00139-23" target="_blank">doi: 10.1128/msphere.00139-23</a></p>
+        </div>
+        
+        <div style="display: flex; gap: 1rem; align-items: center;">
+            <div class="__dimensions_badge_embed__" 
+                 data-doi="10.1128/msphere.00139-23" 
+                 data-style="small_circle">
+            </div>
+            
+            <div data-badge-type="donut" 
+                 data-doi="10.1128/msphere.00139-23" 
+                 data-condensed="true" 
+                 class="altmetric-embed">
+            </div>
+        </div>
+    </div>
+    
+    <div class="publication">
+        <div>
+            <h3>The Andean Cock-of-the-rock (Rupicola peruvianus) is a frugivorous bird predator</h3>
+            <p class="authors">Mahecha, L., <strong>Villabona, N.</strong>, Sierra, L., Ocampo, D., & Laverde-R, O.</p>
+            <p class="journal">The Wilson Journal of Ornithology (2018), 130(2), 558-560. <a href="https://doi.org/10.1676/17-005.1" target="_blank">doi: 10.1676/17-005.1</a></p>
+        </div>
+        
+        <div style="display: flex; gap: 1rem; align-items: center;">
+            <div class="__dimensions_badge_embed__" 
+                 data-doi="10.1676/17-005.1" 
+                 data-style="small_circle">
+            </div>
+            
+            <div data-badge-type="donut" 
+                 data-doi="10.1676/17-005.1" 
+                 data-condensed="true" 
+                 class="altmetric-embed">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p style="font-size: 1.1rem; color: var(--text-medium); margin-bottom: 2rem;">
+            A visual journey through my fieldwork, research, and science communication activities.
+        </p>
+        
+        <div class="gallery-tabs">
+            <div class="gallery-tab active" onclick="showGallery('bees')">🐝 Bees & Fieldwork</div>
+            <div class="gallery-tab" onclick="showGallery('outreach')">📢 Outreach & Teaching</div>
+            <div class="gallery-tab" onclick="showGallery('lab')">🔬 Lab & Research</div>
+            <div class="gallery-tab" onclick="showGallery('all')">🌿 All Photos</div>
+        </div>
+
+<!-- Bees & Fieldwork -->
+<div class="gallery-category active" id="bees">
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="images/rubi.PNG" alt="<em>Bombus</em> rubicundus queen">
+            <div class="caption">
+                <p>Bombus rubicundus queen in Matredonda, Colombia</p>
+            </div>
+        </div>
+        
+        <div class="gallery-item">
+            <img src="images/b_hortulanus.jpg" alt="<em>Bombus</em> hortulanus">
+            <div class="caption">
+                <p><em>Bombus</em> hortulanus foraging</p>
+            </div>
+        </div>
+        
+        <div class="gallery-item">
+            <img src="images/paramo_2.jpg" alt="Páramo ecosystem">
+            <div class="caption">
+                <p>Páramo ecosystem - home to Colombia's highest bumblebee diversity</p>
+            </div>
+        </div>
+        
+        <div class="gallery-item">
+            <img src="images/sumapaz_paramo.jpg" alt="Sumapaz páramo">
+            <div class="caption">
+                <p>Sumapaz páramo landscape</p>
+            </div>
+        </div>
+        
+        <div class="gallery-item">
+            <img src="images/hortulanus_male.jpg" alt="<em>Bombus</em> hortulanus male">
+            <div class="caption">
+                <p>Bombus hortulanus male in a Colombian páramo</p>
+            </div>
+        </div>
+        
+        <div class="gallery-item">
+            <img src="images/fieldwork_paramo.jpg" alt="Fieldwork in Colombian páramo">
+            <div class="caption">
+                <p>Bumblebee field collection in Colombian páramos, 2023</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Outreach & Teaching -->
+<div class="gallery-category" id="outreach">
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="images/stinglessbee_colony.jpg" alt="Stingless bee colony">
+            <div class="caption">
+                <p>Learning meliponiculture techniques at XII Congreso Mesoamericano de Abejas Nativas, Ciudad Guzmán, México 2023</p>
+            </div>
+        </div>
+        
+        <div class="gallery-item">
+            <img src="images/guadalajara_conference.jpg" alt="XII Congreso Mesoamericano de Abejas Nativas">
+            <div class="caption">
+                <p>Presenting at XII Congreso Mesoamericano de Abejas Nativas, Ciudad Guzmán, México 2023</p>
+            </div>
+        </div>
+        
+        <div class="gallery-item">
+            <img src="images/ISME_poster.jpg" alt="ISME19 poster presentation">
+            <div class="caption">
+                <p>Poster presentation at ISME19 International Symposium, Cape Town, South Africa 2024</p>
+            </div>
+        </div>
+        
+<div class="gallery-item">
+    <img src="images/ISME_PRIZE.JPG" alt="ISME Early Career Researcher Poster Award">
+    <div class="caption">
+        <p>Receiving the ISME Early Career Researcher Poster Award at ISME19, Cape Town, South Africa 2024</p>
+    </div>
+</div>
+
+<div class="gallery-item">
+    <img src="images/clubes_1.jpg" alt="Clubes de Ciencia - Sciente Lab and Ministry of National Education">
+    <div class="caption">
+        <p>Instructor at Clubes de Ciencia Colombia - STEM activities for high-school students from rural communities, Tuchín, Colombia 2025</p>
+    </div>
+</div>
+
+<div class="gallery-item">
+    <img src="images/Clubes_2.jpg" alt="Clubes de Ciencia - Cultura Viva, graduation">
+    <div class="caption">
+        <p>Team "Cultura viva" - STEM activities for high-school students from rural communities, Tuchín, Colombia 2025</p>
+    </div>
+</div>
+
+<!-- Lab & Research -->
+<div class="gallery-category" id="lab">
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <div class="gallery-placeholder">
+                <i class="fas fa-image"></i>
+                <p><strong>Lab work</strong><br>Add your photo here!</p>
+            </div>
+            <div class="caption">
+                <p>DNA extraction and library prep</p>
+            </div>
+        </div>
+        
+        <div class="gallery-item">
+            <div class="gallery-placeholder">
+                <i class="fas fa-image"></i>
+                <p><strong>Microscopy</strong><br>Add your photo here!</p>
+            </div>
+            <div class="caption">
+                <p>Examining bee specimens</p>
+            </div>
+        </div>
+        
+        <div class="gallery-item">
+            <div class="gallery-placeholder">
+                <i class="fas fa-image"></i>
+                <p><strong>Lab meeting</strong><br>Add your photo here!</p>
+            </div>
+            <div class="caption">
+                <p>Hammer Lab group meeting</p>
+            </div>
+        </div>
+        
+        <div class="gallery-item">
+            <div class="gallery-placeholder">
+                <i class="fas fa-image"></i>
+                <p><strong>Sequencing</strong><br>Add your photo here!</p>
+            </div>
+            <div class="caption">
+                <p>Preparing samples for sequencing</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- All Photos -->
+<div class="gallery-category" id="all">
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <div class="gallery-placeholder">
+                <i class="fas fa-images"></i>
+                <p><strong>All photos</strong><br>This tab will show all your photos once you add them!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- All Photos -->
+        <div class="gallery-category" id="all">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-images"></i>
+                        <p><strong>All photos</strong><br>This tab will show all your photos once you add them!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p style="font-size: 1.1rem; color: var(--text-medium); margin-bottom: 2rem;">
+            I'm always interested in collaborations, discussions about microbial ecology and bee biology, or questions about my research. Feel free to reach out!
+        </p>
+        
+        <div class="contact-info">
+            <div class="contact-card">
+                <h3>Email</h3>
+                <p><a href="/cdn-cgi/l/email-protection#08667e616464696a67487d6b61266d6c7d"><span class="__cf_email__" data-cfemail="f29c849b9e9e93909db287919bdc979687">[email&#160;protected]</span></a></p>
+            </div>
+            
+            <div class="contact-card">
+                <h3>Location</h3>
+                <p>Department of Ecology and<br>Evolutionary Biology<br>University of California, Irvine</p>
+            </div>
+            
+            <div class="contact-card">
+                <h3>Lab</h3>
+                <p><a href="https://www.hammerlab.org" target="_blank">Hammer Lab</a><br>UC Irvine</p>
+            </div>
+        </div>
+    </section>
+
+<footer>
+    <div class="footer-social">
+        <a href="/cdn-cgi/l/email-protection#3658405f5a5a5754597643555f18535243" title="Email">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://www.instagram.com/nickole97/?hl=en" target="_blank" title="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </div>
+    <p>© 2026 Nickole Andrea Villabona. All rights reserved.</p>
+</footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        function showGallery(category) {
+            // Hide all categories
+            const categories = document.querySelectorAll('.gallery-category');
+            categories.forEach(cat => cat.classList.remove('active'));
+            
+            // Remove active from all tabs
+            const tabs = document.querySelectorAll('.gallery-tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            // Show selected category
+            const selectedCategory = document.getElementById(category);
+            if (selectedCategory) {
+                selectedCategory.classList.add('active');
+            }
+            
+            // Add active to clicked tab
+            event.target.classList.add('active');
+        }
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+        
+    <script>
+    // Menú hamburguesa
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    mobileMenuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+    
+    // Cerrar menú al hacer click en un link
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    });
+    
+    // Smooth scroll (ya lo tienes, pero por si acaso)
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targe
