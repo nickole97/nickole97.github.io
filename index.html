@@ -638,40 +638,67 @@ nav a:hover {
         }
 
 /* Contact Section */
-.contact-info {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.contact-card {
+#contact {
     background: var(--background-alt);
-    padding: 2rem;
-    border-radius: 12px;
+    margin: 0;
+    max-width: 100%;
+    padding: 5rem 0;
+}
+
+.contact-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
     text-align: center;
-    transition: transform 0.3s ease;
 }
 
-.contact-card:hover {
-    transform: translateY(-5px);
-}
-
-.contact-card h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.4rem;
-    color: var(--primary);
+#contact h2 {
+    text-align: center;
     margin-bottom: 1rem;
 }
 
-.contact-card p, .contact-card a {
+#contact p {
+    font-size: 1.1rem;
     color: var(--text-medium);
-    text-decoration: none;
-    transition: color 0.3s ease;
+    margin-bottom: 3rem;
+    text-align: center;
 }
 
-.contact-card a:hover {
-    color: var(--secondary);
+.contact-icons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.contact-icons a {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.contact-icons a:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(44, 95, 45, 0.2);
+}
+
+.copyright {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
 }
 
         /* Gallery Section */
@@ -1158,21 +1185,23 @@ nav a:hover {
     </section>
 
 <section id="contact">
-    <h2>Contact</h2>
-    
-    <p>I'm interested in collaborations and discussions about microbial ecology and bee biology. Feel free to reach out!</p>
-    
-    <div class="contact-icons">
-        <a href="mailto:nvillabo@uci.edu" title="Email">
-            <i class="fa-solid fa-envelope"></i>
-        </a>
-        <a href="https://www.instagram.com/nickole97/?hl=en" target="_blank" title="Instagram">
-            <i class="fa-brands fa-instagram"></i>
-        </a>
-    </div>
-    
-    <div class="copyright">
-        © 2026 Nickole Andrea Villabona. All rights reserved.
+    <div class="contact-content">
+        <h2>Contact</h2>
+        
+        <p>I'm interested in collaborations and discussions about microbial ecology and bee biology. Feel free to reach out!</p>
+        
+        <div class="contact-icons">
+            <a href="mailto:nvillabo@uci.edu" title="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://www.instagram.com/nickole97/?hl=en" target="_blank" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        
+        <div class="copyright">
+            © 2026 Nickole Andrea Villabona. All rights reserved.
+        </div>
     </div>
 </section>
 
