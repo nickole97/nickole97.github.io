@@ -639,7 +639,7 @@ nav a:hover {
 
 /* Contact Section */
 #contact {
-    background: var(--background-alt);
+    background: var(--primary);
     margin: 0;
     max-width: 100%;
     padding: 5rem 0;
@@ -655,11 +655,16 @@ nav a:hover {
 #contact h2 {
     text-align: center;
     margin-bottom: 1rem;
+    color: white;
+}
+
+#contact h2::after {
+    background: var(--secondary);
 }
 
 #contact p {
     font-size: 1.1rem;
-    color: var(--text-medium);
+    color: white;
     margin-bottom: 3rem;
     text-align: center;
 }
@@ -682,23 +687,23 @@ nav a:hover {
     color: var(--primary);
     font-size: 2rem;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
 .contact-icons a:hover {
-    background: var(--primary);
+    background: var(--secondary);
     color: white;
     transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(44, 95, 45, 0.2);
+    box-shadow: 0 8px 30px rgba(244, 162, 89, 0.4);
 }
 
 .copyright {
     text-align: center;
-    color: var(--text-light);
+    color: rgba(255, 255, 255, 0.8);
     font-size: 0.9rem;
     margin-top: 3rem;
     padding-top: 2rem;
-    border-top: 1px solid var(--border);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
         /* Gallery Section */
