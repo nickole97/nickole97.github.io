@@ -637,73 +637,41 @@ nav a:hover {
             box-shadow: 0 8px 30px rgba(44, 95, 45, 0.3);
         }
 
-        /* Contact Section */
-        .contact-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .contact-card {
-            background: var(--background-alt);
-            padding: 2rem;
-            border-radius: 12px;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .contact-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .contact-card h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.4rem;
-            color: var(--primary);
-            margin-bottom: 1rem;
-        }
-
-        .contact-card p, .contact-card a {
-            color: var(--text-medium);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .contact-card a:hover {
-            color: var(--secondary);
-        }
-
-        /* Footer */
-footer {
-    background: var(--primary);
-    color: white;
-    text-align: center;
-    padding: 2rem;
-    margin-top: 0;
+/* Contact Section */
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
-footer .footer-social {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
+.contact-card {
+    background: var(--background-alt);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: var(--primary);
     margin-bottom: 1rem;
 }
 
-footer .footer-social a {
-    color: white;
-    font-size: 1.8rem;
-    transition: all 0.3s ease;
+.contact-card p, .contact-card a {
+    color: var(--text-medium);
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-footer .footer-social a:hover {
+.contact-card a:hover {
     color: var(--secondary);
-    transform: translateY(-3px);
-}
-
-footer p {
-    opacity: 0.9;
-    font-size: 0.9rem;
 }
 
         /* Gallery Section */
@@ -1189,41 +1157,24 @@ footer p {
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p style="font-size: 1.1rem; color: var(--text-medium); margin-bottom: 2rem;">
-            I'm always interested in collaborations, discussions about microbial ecology and bee biology, or questions about my research. Feel free to reach out!
-        </p>
-        
-        <div class="contact-info">
-            <div class="contact-card">
-                <h3>Email</h3>
-                <p><a href="/cdn-cgi/l/email-protection#08667e616464696a67487d6b61266d6c7d"><span class="__cf_email__" data-cfemail="f29c849b9e9e93909db287919bdc979687">[email&#160;protected]</span></a></p>
-            </div>
-            
-            <div class="contact-card">
-                <h3>Location</h3>
-                <p>Department of Ecology and<br>Evolutionary Biology<br>University of California, Irvine</p>
-            </div>
-            
-            <div class="contact-card">
-                <h3>Lab</h3>
-                <p><a href="https://www.hammerlab.org" target="_blank">Hammer Lab</a><br>UC Irvine</p>
-            </div>
-        </div>
-    </section>
-
-<footer>
-    <div class="footer-social">
-        <a href="/cdn-cgi/l/email-protection#3658405f5a5a5754597643555f18535243" title="Email">
+<section id="contact">
+    <h2>Contact</h2>
+    
+    <p>I'm interested in collaborations and discussions about microbial ecology and bee biology. Feel free to reach out!</p>
+    
+    <div class="contact-icons">
+        <a href="mailto:nvillabo@uci.edu" title="Email">
             <i class="fa-solid fa-envelope"></i>
         </a>
         <a href="https://www.instagram.com/nickole97/?hl=en" target="_blank" title="Instagram">
             <i class="fa-brands fa-instagram"></i>
         </a>
     </div>
-    <p>© 2026 Nickole Andrea Villabona. All rights reserved.</p>
-</footer>
+    
+    <div class="copyright">
+        © 2026 Nickole Andrea Villabona. All rights reserved.
+    </div>
+</section>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         function showGallery(category) {
